@@ -2,6 +2,8 @@
 
 \documentclass[10pt,twoside,slovak,a4paper]{article}
 
+
+
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
 \usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
@@ -15,12 +17,12 @@
 
 \pagestyle{headings}
 
-\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2025/26, vedenie: martin sabo}} % meno a priezvisko vyučujúceho na cvičeniach
 
-\author{Meno Priezvisko\\[2pt]
+\author{Michal Hlinka\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
-	{\small \texttt{...@stuba.sk}}
+	{\small \texttt{xhlinka@stuba.sk}}
 	}
 
 \date{\small 30. september 2015} % upravte
@@ -39,6 +41,8 @@
 
 \section{Úvod}
 
+\input{example}
+
 Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
 
 Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
@@ -46,15 +50,17 @@ Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlen
 Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
 Záverečné poznámky prináša časť~\ref{zaver}.
 
-
+\section{Nova sekcia uloha 3}
 
 \section{Nejaká časť} \label{nejaka}
+
+\includegraphics[scale=0.3]{images.png}
 
 Z obr.~\ref{f:rozhod} je všetko jasné. 
 
 \begin{figure*}[tbh]
 \centering
-%\includegraphics[scale=1.0]{diagram.pdf}
+
 Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
 \caption{Rozhodujúci argument.}
 \label{f:rozhod}
@@ -115,10 +121,11 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 
 
+
 %\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
-\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\bibliographystyle{alpha} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
